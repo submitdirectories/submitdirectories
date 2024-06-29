@@ -1,0 +1,29 @@
+name: General question or discussion
+description: Ask a question or start a discussion about SubmitDirectories
+title: "[DISCUSSION] "
+labels: question
+assignees: 'submitdirectories'
+
+body:
+- type: markdown
+  attributes:
+    value: |
+      Use this template to ask questions or start discussions about the project.
+
+- type: textarea
+  id: topic
+  attributes:
+    label: Topic
+    description: "What is the topic of your question or discussion?"
+    placeholder: "Describe the topic..."
+  validations:
+    required: true
+
+- type: textarea
+  id: details
+  attributes:
+    label: Details
+    description: "Provide any additional details or context."
+    placeholder: "Provide details..."
+  validations:
+    required: false

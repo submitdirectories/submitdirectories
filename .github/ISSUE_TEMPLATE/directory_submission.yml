@@ -1,0 +1,63 @@
+name: Directory submission
+description: Submit a new directory to be added to the list
+title: "[SUBMISSION] "
+labels: submission
+assignees: 'submitdirectories'
+
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thanks for contributing a new directory! Please provide the details below.
+
+- type: input
+  id: type
+  attributes:
+    label: Category
+    description: "What is the main category of this directory?"
+    placeholder: "e.g., AI, SaaS, Tool, Startup"
+  validations:
+    required: true
+
+- type: input
+  id: website_url
+  attributes:
+    label: Website URL
+    description: "URL of the directory website."
+    placeholder: "https://example.com"
+  validations:
+    required: true
+
+- type: input
+  id: submit_url
+  attributes:
+    label: Submit URL
+    description: "URL where users can submit their website."
+    placeholder: "https://example.com/submit"
+  validations:
+    required: true
+
+- type: input
+  id: type
+  attributes:
+    label: Submission Type
+    description: "Domain Authority of the directory website."
+    placeholder: "e.g., free, login required, paid"
+  validations:
+    required: true
+
+- type: input
+  id: price
+  attributes:
+    label: Price (optional)
+    description: "If there is a price, where does the pricing begin for the submission of a site?"
+    placeholder: "e.g., $45"
+
+- type: textarea
+  id: notes
+  attributes:
+    label: Additional Notes
+    description: "Any additional information about the directory."
+    placeholder: "Any other details..."
+  validations:
+    required: false
