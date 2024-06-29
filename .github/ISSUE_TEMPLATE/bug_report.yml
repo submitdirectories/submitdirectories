@@ -2,7 +2,7 @@ name: Bug report
 description: Report a bug or issue with the SubmitDirectories Lists
 title: "[BUG] "
 labels: bug
-assignees: ''
+assignees: 'submitdirectories'
 
 body:
 - type: markdown
