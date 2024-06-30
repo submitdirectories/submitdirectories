@@ -11,11 +11,29 @@ body:
       Thanks for contributing a new directory! Please provide the details below.
 
 - type: input
-  id: type
+  id: category
   attributes:
     label: Category
-    description: "What is the main category of this directory?"
-    placeholder: "e.g., AI, SaaS, Tool, Startup"
+    description: "Category of the directory (e.g., AI Tool, SaaS, etc.)."
+    placeholder: "Enter the category"
+  validations:
+    required: true
+
+- type: input
+  id: submission_type
+  attributes:
+    label: Submission Type
+    description: "Type of submission (e.g., Free, Paid, Sign In)."
+    placeholder: "Free"
+  validations:
+    required: true
+
+- type: input
+  id: domain_authority
+  attributes:
+    label: Domain Authority (DA)
+    description: "Domain Authority of the directory website."
+    placeholder: "e.g., 45"
   validations:
     required: true
 
@@ -36,28 +54,3 @@ body:
     placeholder: "https://example.com/submit"
   validations:
     required: true
-
-- type: input
-  id: type
-  attributes:
-    label: Submission Type
-    description: "Domain Authority of the directory website."
-    placeholder: "e.g., free, login required, paid"
-  validations:
-    required: true
-
-- type: input
-  id: price
-  attributes:
-    label: Price (optional)
-    description: "If there is a price, where does the pricing begin for the submission of a site?"
-    placeholder: "e.g., $45"
-
-- type: textarea
-  id: notes
-  attributes:
-    label: Additional Notes
-    description: "Any additional information about the directory."
-    placeholder: "Any other details..."
-  validations:
-    required: false
